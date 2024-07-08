@@ -1,6 +1,6 @@
 {
-  "name": "@ignite-ui/tokens",
-  "version": "0.1.0",
+  "name": "@fnts-ignite-ui/tokens",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -10,12 +10,12 @@
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "lint": "eslint src/**/*.ts* --fix"
   },
-  "keywords": [ ],
+  "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@ignite-ui/ts-config": "*",
-    "@ignite-ui/eslint-config": "*",
+    "@fnts-ignite-ui/ts-config": "*",
+    "@fnts-ignite-ui/eslint-config": "*",
     "tsup": "^8.1.0",
     "typescript": "^5.5.3"
   }

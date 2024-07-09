@@ -23,11 +23,11 @@ jobs:
 
       - run: npm run build
         env:
-          TURBO_TOKEN: 6rDR2zSlKewGwPuyxo36BdnJ
-          TURBO_TEAM: rodrigo-fontes-projects-26ffb8ce
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          TURBO_TEAM: ${{ secrets.VERCEL_TEAM }}
 
       - name: Deploy storybook
         working-directory: ./packages/docs
         run: touch storybook-static/.nojekyll && npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
-          GH_TOKEN: ${{ github.actor }}:${{secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
